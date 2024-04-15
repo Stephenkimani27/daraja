@@ -5,12 +5,12 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'nk16Y74eSbTaGQgc9WF8j6FigApqOMWr'; //Fill with your app Consumer Key
-  $consumerSecret = '40fD1vRXCq90XFaU'; // Fill with your app Secret
+  $consumerKey = ': NjZDrRPavdX60xmQLdAqwPeNSRFAQq9vjPqN5hg8d1UbUv23'; //Fill with your app Consumer Key
+  $consumerSecret = 'EUYNHGSqVwLu0don8I9yBiwN5TEAwRuoACqxGgbdM6e4sAT9EiVKYmJRUXdT4EEk'; // Fill with your app Secret
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
-  $BusinessShortCode = '174379';
+  $BusinessShortCode = '4103634';
   $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';  
   
   /*
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://morning-basin-87523.herokuapp.com/callback_url.php';  
+  $CallBackURL = 'https://glacial-lake-14554-3ef5cb66f1b8.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
